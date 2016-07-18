@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative_layout"
+    tools:context="com.example.android.stockhawk.StockListActivityFragment">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/stock_list"
+        tools:listitem="@layout/list_item_quotes">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <include layout="@layout/empty_state_no_connection" />
+
+    <include layout="@layout/empty_state_no_stock" />
+
+</RelativeLayout>
